@@ -1,0 +1,38 @@
+<div class="main-product">
+    <div class="product" *ngFor="let item of products">
+        <div class="photo">
+            <a href="#"><img src={{item.photo}} alt=""></a>
+        </div>
+        <div class="info">
+            <div class="product-name">
+                <p>{{item.name}}</p>
+            </div>
+            <div class="product-cost">
+                <p>{{item.cost}}$</p>
+            </div>
+            <div class="raise-btn"><button (click)="onClickEvent(item.id)">Raise</button></div>
+        </div>
+    </div>
+    <div class="creator">
+        <div class="header">
+            <h1>Creator</h1>
+        </div>
+        <div class="creator-body">
+            <div>
+                Name: <input (keyup.enter)="onKeyEvent($event)">
+            </div>
+            <div>
+                Cost: <input (keyup.enter)="onKeyEvent($event)">
+            </div>
+            <div>
+                Def: <input (keyup.enter)="onKeyEvent($event)">
+            </div>
+            <div>
+                Photo: <input (keyup.enter)="onKeyEvent($event)">
+            </div>
+            <div>
+                <p>{{test}}</p>
+            </div>
+        </div>
+    </div>
+</div>

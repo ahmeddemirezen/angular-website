@@ -1,13 +1,7 @@
-body {
-    background: #28cf7c;
-    font-family: sans-serif;
-}
-
-nav {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/* nav {
+    position: fixed;
+    top: 10px;
+    width: 100%;
 }
 
 ul {
@@ -16,11 +10,11 @@ ul {
 }
 
 ul>li {
-    display: inline-block;
+    display: inline-table;
 }
 
 ul>li>a {
-    color: #aaaeaf;
+    color: #ffbe5c;
     text-decoration: none;
     display: inline-block;
     text-transform: uppercase;
@@ -28,9 +22,9 @@ ul>li>a {
     padding: 15px 10px;
 }
 
-#border {
+.border {
     position: absolute;
     background: #DC3522;
     height: 5px;
     transition: width 0.3s, left 0.3s;
-}
+} */
