@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FormControl} from '@angular/forms'
 import { IProduct } from './products';
 
 @Component({
@@ -9,6 +10,8 @@ import { IProduct } from './products';
 export class CardComponent implements OnInit {
 
     test = "";
+
+    productName = '';
 
     products: IProduct[] = [{
         id: 0,
@@ -43,6 +46,14 @@ export class CardComponent implements OnInit {
     }
 
     onKeyEvent(event: any) {
-        this.test = typeof(event);
+        let currentID = this.products[this.products.length - 1].id;
+        
+        this.products.push({
+            id: currentID + 1,
+            name: this.productName,
+            cost: 250,
+            definition: "def",
+            photo: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MLA22LL?wid=1144&hei=1144&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1496944005839"
+        });
     }
 }
