@@ -18,20 +18,24 @@
             <h1>Creator</h1>
         </div>
         <div class="creator-body">
-            <div>
-                Name: <input type="text" [(ngModel)]="productName">
+            <div class="inputBox">
+                <div class="creatorInputName">Name</div><input id="name" type="text" class="form-control"
+                    [formControl]="name">
             </div>
-            <div>
-                Cost: <input (keyup.enter)="onKeyEvent($event)">
+            <div class="inputBox">
+                <div class="creatorInputName">Cost</div><input id="cost" type="text" class="form-control"
+                    [formControl]="cost">
             </div>
-            <div>
-                Def: <input (keyup.enter)="onKeyEvent($event)">
+            <div class="inputBox">
+                <div class="creatorInputName">Definition</div><input id="def" type="text" class="form-control"
+                    [formControl]="def">
             </div>
-            <div>
-                Photo: <input (keyup.enter)="onKeyEvent($event)">
+            <div class="inputBox">
+                <div class="creatorInputName">Photo</div><input id="photo" type="text" class="form-control"
+                    [formControl]="photo">
             </div>
-            <div>
-                <p>{{test}}</p>
+            <div id="addButton">
+                <button (click)="onClickAdd()">Add</button>
             </div>
         </div>
     </div>

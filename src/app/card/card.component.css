@@ -2,6 +2,14 @@
     display: flex;
 }
 
+.inputBox{
+    display: flex;
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    background-color: chocolate;
+}
+
 .product {
     width: 250px;
     height: 380px;
@@ -79,7 +87,7 @@ button {
 
 .creator-body{
     width: 300px;
-    height: 350px;
+    height: 325px;
     margin-top: 20px;
     background-color: rgb(131, 210, 255);
 }
@@ -87,4 +95,31 @@ button {
 h1{
     text-align: center;
     text-justify: auto;
+}
+
+input[type="text"] {
+    color: #fff;
+    background-color: #4CAF50;
+    width: 180px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: 5px;
+    float: top;
+    padding: 0 10px 0 10px;
+    font-size: 18px;
+}
+
+.creatorInputName{
+    width: 40;
+    height: 30px;
+    margin: auto;
+    margin-left: 15px;
+    background-color: gold;
+}
+
+#addButton{
+    margin-top: 25px;
+    margin-left: 100px;
 }
